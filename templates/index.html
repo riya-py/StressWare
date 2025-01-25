@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-brain"></i> Welcome to Stressware </h1>
+            <p class="subtitle">Analyze and understand your stress levels</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form action="{{ url_for('predict') }}" method="post">
+                    <div class="input-group">
+                        <label for="text">How are you feeling today?</label>
+                        <textarea 
+                            id="text" 
+                            name="text" 
+                            rows="6" 
+                            placeholder="Express your thoughts and feelings here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-search"></i> Analyze
+                    </button>
+                </form>
+            </div>
+
+            <div class="info-section">
+                <h2>How it works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <i class="fas fa-pen-to-square"></i>
+                        <h3>Express</h3>
+                        <p>Share your thoughts and feelings in the text box above</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analyze</h3>
+                        <p>Our AI system analyzes your text for stress indicators</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-heart"></i>
+                        <h3>Get Help</h3>
+                        <p>Receive personalized recommendations and support</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>If you're experiencing severe stress or having thoughts of self-harm, please reach out for help:</p>
+            <p class="emergency">Emergency (US): 911 | Crisis Helpline (US): 988</p>
+            <p class="emergency">Emergency(India): 112 | Mental Health Helpline(India): 14416 | Suicide Prevention(India): 022-27546669</p>
+        </footer>
+    </div>
+</body>
+</html>

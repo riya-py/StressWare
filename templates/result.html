@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - Stress Analysis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-brain"></i> Analysis Results</h1>
+            <a href="{{ url_for('index') }}" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </header>
+
+        <main class="results-main">
+            <div class="result-card">
+                <div class="stress-meter">
+                    <div class="meter-label">Stress Level</div>
+                    <div class="meter-value {{ stress_level.lower() }}">
+                        {{ stress_level }}
+                    </div>
+                    <div class="confidence">
+                        Confidence: {{ "%.1f"|format(confidence * 100) }}%
+                    </div>
+                </div>
+
+                <div class="recommendations">
+                    <h2>Recommendations</h2>
+                    
+                    <div class="rec-section">
+                        <h3><i class="fas fa-wind"></i> Immediate Actions</h3>
+                        <ul>
+                            {% for action in recommendations.immediate_actions %}
+                            <li>{{ action }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="rec-section">
+                        <h3><i class="fas fa-lungs"></i> Breathing Exercise</h3>
+                        <p>{{ recommendations.breathing_exercise }}</p>
+                    </div>
+
+                    <div class="rec-section">
+                        <h3><i class="fas fa-running"></i> Physical Activity</h3>
+                        <p>{{ recommendations.physical_activity }}</p>
+                    </div>
+
+                    <div class="rec-section">
+                        <h3><i class="fas fa-spa"></i> Mindfulness</h3>
+                        <p>{{ recommendations.mindfulness }}</p>
+                    </div>
+
+                    <div class="rec-section">
+                        <h3><i class="fas fa-calendar"></i> Lifestyle Change</h3>
+                        <p>{{ recommendations.lifestyle_change }}</p>
+                    </div>
+
+                    <div class="rec-section">
+                        <h3><i class="fas fa-users"></i> Social Support</h3>
+                        <p>{{ recommendations.social_support }}</p>
+                    </div>
+
+                    {% if recommendations.urgent_notice %}
+                    <div class="urgent-notice">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        {{ recommendations.urgent_notice }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Remember: These are general recommendations. For persistent stress, please consult a healthcare professional.</p>
+            <p class="emergency">Emergency (US): 911 | Crisis Helpline (US): 988</p>
+            <p class="emergency">Emergency(India): 112 | Mental Health Helpline(India): 14416 | Suicide Prevention(India): 022-27546669</p>
+        </footer>
+    </div>
+</body>
+</html>
