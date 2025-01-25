@@ -57,7 +57,7 @@ stressware: mental health detection system
 ├── app.py                  # Main Flask application
 ├── recommendations.py      # Recommendation system
 ├── requirements.txt        # Project dependencies
-├── Stressware.ipynp        # Training data
+├── Stressware.ipynp        # Training Model
 ├── static/
 │   └── style.css          # CSS styles
 ├── templates/
