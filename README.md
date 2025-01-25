@@ -53,11 +53,11 @@ The application will be available at `http://localhost:5000`
 ## Project Structure
 
 ```
-stressware: mental health detection system
+stressware: mental health analysis system
 ├── app.py                  # Main Flask application
 ├── recommendations.py      # Recommendation system
 ├── requirements.txt        # Project dependencies
-├── Stressware.ipynp        # Training Model
+├── Stressware.ipynp        # Training the Model
 ├── static/
 │   └── style.css          # CSS styles
 ├── templates/
