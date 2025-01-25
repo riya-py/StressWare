@@ -28,8 +28,8 @@ A web-based application that analyzes text input to detect stress levels and pro
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mental-health-analysis-system.git
-cd mental-health-analysis-system
+git clone https://github.com/yourusername/Stressware.git
+cd Stressware
 ```
 
 2. Create and activate a virtual environment:
