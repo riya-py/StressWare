@@ -14,7 +14,7 @@ A web-based application that analyzes text input to detect stress levels and pro
   - Physical activities
   - Mindfulness practices
   - Lifestyle changes
-  - Social support
+  - Social support 
 
 ## Tech Stack
 
