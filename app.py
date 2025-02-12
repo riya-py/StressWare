@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request 
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer 
 from sklearn.linear_model import LogisticRegression
 import pickle
 from recommendations import StressRecommendations
