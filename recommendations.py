@@ -1,6 +1,6 @@
 from enum import Enum
 import random
-
+ 
 class StressLevel(Enum):
     LOW = "low"
     MODERATE = "moderate"
