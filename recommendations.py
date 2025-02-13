@@ -6,7 +6,7 @@ class StressLevel(Enum):
     MODERATE = "moderate"
     HIGH = "high"
     SEVERE = "severe"
-
+ 
 class StressRecommendations:
     def __init__(self):
         self.breathing_exercises = {
