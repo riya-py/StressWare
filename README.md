@@ -2,7 +2,7 @@
 
 A web-based application that analyzes text input to detect stress levels and provides personalized recommendations for stress management.
 
-## Features
+## Features  
 
 - Text-based stress level Analysis using machine learning
 - Real-time analysis and predictions
@@ -14,7 +14,7 @@ A web-based application that analyzes text input to detect stress levels and pro
   - Physical activities
   - Mindfulness practices
   - Lifestyle changes
-  - Social support
+  - Social support 
 
 ## Tech Stack
 
@@ -28,8 +28,8 @@ A web-based application that analyzes text input to detect stress levels and pro
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mental-health-analysis-system.git
-cd mental-health-analysis-system
+git clone https://github.com/yourusername/Stressware.git
+cd Stressware
 ```
 
 2. Create and activate a virtual environment:
@@ -53,11 +53,11 @@ The application will be available at `http://localhost:5000`
 ## Project Structure
 
 ```
-stressware: mental health detection system
+stressware: mental health analysis system
 ├── app.py                  # Main Flask application
 ├── recommendations.py      # Recommendation system
 ├── requirements.txt        # Project dependencies
-├── Stressware.ipynp        # Training data
+├── Stressware.ipynp        # Training the Model
 ├── static/
 │   └── style.css          # CSS styles
 ├── templates/
@@ -121,4 +121,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 riya - [@riya_pyy](https://twitter.com/riya_pyy) - riya.rk006@gmail.com
 
+<<<<<<< HEAD
 Project Link: Project Link: [https://github.com/riya-py/Stressware](https://github.com/riya-py/Stressware)
+=======
+Project Link: [https://github.com/riya-py/Stressware](https://github.com/riya-py/Stressware)
+>>>>>>> 12d6baf9788bb366aee2ff6a14f2504a20e7a46a

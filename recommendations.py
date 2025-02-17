@@ -1,12 +1,12 @@
 from enum import Enum
 import random
-
+ 
 class StressLevel(Enum):
     LOW = "low"
     MODERATE = "moderate"
     HIGH = "high"
     SEVERE = "severe"
-
+ 
 class StressRecommendations:
     def __init__(self):
         self.breathing_exercises = {

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request 
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer 
 from sklearn.linear_model import LogisticRegression
 import pickle
 from recommendations import StressRecommendations
@@ -12,7 +12,7 @@ recommender = StressRecommendations()
 
 # Load the trained model and vectorizer
 try:
-    with open('model/stress_model.pkl', 'rb') as f:
+    with open('model/stress_model.pkl', 'rb') as f: 
         model = pickle.load(f)
     with open('model/vectorizer.pkl', 'rb') as f:
         vectorizer = pickle.load(f)
@@ -89,5 +89,5 @@ def page_not_found(e):
 def internal_server_error(e):
     return render_template('500.html'), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == '__main__': 
+    app.run(debug=True) 
