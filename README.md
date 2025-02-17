@@ -121,6 +121,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 riya - [@riya_pyy](https://twitter.com/riya_pyy) - riya.rk006@gmail.com
 
-Project Link: Project Link: [https://github.com/riya-py/Stressware](https://github.com/riya-py/Stressware)
-=======
 Project Link: [https://github.com/riya-py/Stressware](https://github.com/riya-py/Stressware)
