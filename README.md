@@ -2,7 +2,7 @@
 
 A web-based application that analyzes text input to detect stress levels and provides personalized recommendations for stress management.
 
-## Features  
+## Features   
 
 - Text-based stress level Analysis using machine learning
 - Real-time analysis and predictions
